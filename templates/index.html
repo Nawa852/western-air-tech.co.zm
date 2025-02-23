@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Western Air Tech | Premier HVAC Solutions</title>
+  <!-- CSS Files -->
+  <link rel="stylesheet" href="/static/css/style.css">
+  <link rel="stylesheet" href="/static/css/animations.css">
+  <!-- JavaScript Files -->
+  <script src="/static/js/main.js" defer></script>
+  <script src="/static/js/tilt.js" defer></script>
+  <script src="/static/js/combined_script.js" defer></script>
+  <!-- Include VanillaTilt from CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js" 
+          integrity="sha512-+MBZoJl+nIsb9mYAJwc+EC0+HkqrYh56gnYVq7V7IwwOw1R3d1Bf8Je++ZWLLfSnuFHr+4lNsMoCSX+WM2dy8g==" 
+          crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <div class="logo interactive-item">
+      <a href="#home">
+        <img src="/static/images/logo.png" alt="Western Air Tech Logo">
+      </a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#social-media">Social Media</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Home Section with Parallax Background -->
+    <section id="home" class="parallax">
+      <div class="home-content">
+        <h2>Welcome to Western Air Tech</h2>
+        <p>Your trusted HVAC solutions provider for high-performance air conditioning, heating, and ventilation systems.</p>
+        <a href="#contact" class="cta-button interactive-item">Get a Free Quote</a>
+      </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about">
+      <h2>About Western Air Tech</h2>
+      <p>
+        With over 15 years of industry experience, Western Air Tech has been at the forefront of HVAC innovation.
+        We are committed to delivering energy-efficient, reliable, and state-of-the-art heating, cooling, and ventilation systems
+        for residential, commercial, and industrial clients. Our expert team is dedicated to ensuring comfort, sustainability,
+        and optimal indoor air quality for all our customers.
+      </p>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+      <h2>Our Services</h2>
+      <ul>
+        <li>Installation</li>
+        <li>Maintenance</li>
+        <li>Repair</li>
+        <li>Energy Audits</li>
+        <li>Duct Cleaning</li>
+        <li>Duct Sealing</li>
+        <li>Thermostat Installation</li>
+        <li>Zoning System Installation</li>
+        <li>Emergency Services</li>
+      </ul>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products">
+      <h2>Our Products</h2>
+      <div class="product-gallery">
+        <div class="product interactive-item" data-tilt>
+          <img src="/static/images/products/air_conditioning_units/unit1.jpg" alt="Air Conditioner">
+          <p>Air Conditioning Units</p>
+        </div>
+        <div class="product interactive-item" data-tilt>
+          <img src="/static/images/products/air_conditioning_units/unit2.jpg" alt="Air Conditioner">
+          <p>Air Conditioning Units</p>
+        </div>
+        <div class="product interactive-item" data-tilt>
+          <img src="/static/images/products/heating_systems/heater1.jpg" alt="Heating System">
+          <p>Heating Systems</p>
+        </div>
+        <div class="product interactive-item" data-tilt>
+          <img src="/static/images/products/heating_systems/heater2.jpg" alt="Heating System">
+          <p>Heating Systems</p>
+        </div>
+        <div class="product interactive-item" data-tilt>
+          <img src="/static/images/products/ventilation_systems/vent1.jpg" alt="Ventilation System">
+          <p>Ventilation Systems</p>
+        </div>
+        <div class="product interactive-item" data-tilt>
+          <img src="/static/images/products/ventilation_systems/vent2.jpg" alt="Ventilation System">
+          <p>Ventilation Systems</p>
+        </div>
+        <div class="product interactive-item" data-tilt>
+          <img src="/static/images/products/air_purification_systems/airpurifier1.jpg" alt="Air Purification System">
+          <p>Air Purification Systems</p>
+        </div>
+        <div class="product interactive-item" data-tilt>
+          <img src="/static/images/products/air_purification_systems/airpurifier2.jpg" alt="Air Purification System">
+          <p>Air Purification Systems</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog">
+      <h2>What's on Your Mind?</h2>
+      <div class="blog-box">
+        <form id="blog-form">
+          <textarea id="blog-input" placeholder="Share your thoughts..." rows="3"></textarea>
+          <div class="blog-form-actions">
+            <input type="file" id="blog-file" accept="image/*,video/mp4">
+            <button type="submit" class="interactive-item">Post</button>
+          </div>
+        </form>
+        <div class="blog-posts" id="blog-posts">
+          <!-- Blog posts will be loaded here via AJAX -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Social Media Section -->
+    <section id="social-media">
+      <h2>Our Social Media Updates</h2>
+      <div class="social-feed" id="social-posts">
+        <!-- Social media posts loaded dynamically with 3D animations -->
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <p>Email: <a href="mailto:info@westernairtech.com">westernairtechinfor@gmail.com</a></p>
+      <p>Phone: +260 762344488</p>
+      <p>Address: 22722 Longacres Along Alick Nkhata Road, Lusaka, Zambia</p>
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-column">
+        <h3>Follow Us on Social Media</h3>
+        <ul class="social-links">
+          <li><a href="https://www.facebook.com/westernairtech" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+          <li><a href="https://twitter.com/westernairtech" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+          <li><a href="https://www.instagram.com/westernairtech" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+          <li><a href="https://www.linkedin.com/company/westernairtech" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <p>&copy; 2025 Western Air Tech. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
+
